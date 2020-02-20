@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="87d-GG-0Uy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamRounded-Bold.otf">
+            <string>GothamRounded-Bold</string>
+        </array>
+        <array key="GothamRounded-Book.otf">
+            <string>GothamRounded-Book</string>
+        </array>
+        <array key="GothamRounded-Medium.otf">
+            <string>GothamRounded-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Home" id="BYZ-38-t0r" customClass="HomeViewController" customModule="KineduTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="MKy-bP-B96" userLabel="Header Stack View">
+                                <rect key="frame" x="16" y="20" width="343" height="61.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose app version" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3D-Pd-cKK">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="15"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="15"/>
+                                        <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BIJ-Zx-o9h" customClass="CustomSegmentedControl" customModule="KineduTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="21" width="343" height="40.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="BIJ-Zx-o9h" secondAttribute="height" multiplier="8.5:1" id="Ayd-H6-Jcv"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="segments" value="3.2.2, 3.2.1, 3.1.12"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                <color key="value" name="ActiveTab"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="segmentBorderColor">
+                                                <color key="value" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="segmentTitleColor">
+                                                <color key="value" name="Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="segmentBackgroundColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0i-hM-txX">
+                                <rect key="frame" x="16" y="113" width="343" height="377"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N P S   S C O R E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkN-kw-xD9">
+                                        <rect key="frame" x="0.0" y="16" width="343" height="46"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="22"/>
+                                        <color key="textColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ch7-j7-dor" userLabel="Content Stack View">
+                                        <rect key="frame" x="0.0" y="78" width="343" height="283"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vCy-Dy-vJ5" userLabel="Fremium Stack View">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="125"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fremium users" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRc-kM-VF1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="14"/>
+                                                        <color key="textColor" name="NavigationBar"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhm-yI-OOG">
+                                                        <rect key="frame" x="0.0" y="22.5" width="343" height="80"/>
+                                                        <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="80"/>
+                                                        <color key="textColor" name="Red"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Out of 20 users" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oba-Rc-Mli">
+                                                        <rect key="frame" x="0.0" y="110.5" width="343" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                                                        <color key="textColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="j2F-18-w1U"/>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wcQ-cI-MIY" userLabel="Divisor View">
+                                                <rect key="frame" x="0.0" y="141" width="343" height="1"/>
+                                                <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="0OY-Ta-wE6"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RAb-uB-8VY" userLabel="Preimum Stack View">
+                                                <rect key="frame" x="0.0" y="158" width="343" height="125"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Premium users" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRw-Ce-t8a">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="14"/>
+                                                        <color key="textColor" name="NavigationBar"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="73" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxR-gn-Hvt">
+                                                        <rect key="frame" x="0.0" y="22.5" width="343" height="80"/>
+                                                        <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="80"/>
+                                                        <color key="textColor" name="Green"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Out of 159 users" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dG0-S9-zag">
+                                                        <rect key="frame" x="0.0" y="110.5" width="343" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="14"/>
+                                                        <color key="textColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="XkN-kw-xD9" secondAttribute="trailing" id="Anv-sv-TqL"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ch7-j7-dor" secondAttribute="bottom" constant="16" id="OG5-pi-Ws9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ch7-j7-dor" secondAttribute="trailing" id="PAv-36-0qi"/>
+                                    <constraint firstItem="Ch7-j7-dor" firstAttribute="leading" secondItem="x0i-hM-txX" secondAttribute="leading" id="Sb2-Gc-aQW"/>
+                                    <constraint firstItem="XkN-kw-xD9" firstAttribute="top" secondItem="x0i-hM-txX" secondAttribute="top" constant="16" id="cxk-eo-3Pk"/>
+                                    <constraint firstItem="XkN-kw-xD9" firstAttribute="leading" secondItem="x0i-hM-txX" secondAttribute="leading" id="lE9-M2-Xmu"/>
+                                    <constraint firstItem="Ch7-j7-dor" firstAttribute="top" secondItem="XkN-kw-xD9" secondAttribute="bottom" constant="16" id="nC9-to-sf8"/>
+                                    <constraint firstAttribute="width" secondItem="x0i-hM-txX" secondAttribute="height" multiplier="0.91:1" id="xsF-hQ-NdC"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idD-1g-cbQ" customClass="RoundButton" customModule="KineduTest" customModuleProvider="target">
+                                <rect key="frame" x="37" y="523" width="300" height="50"/>
+                                <color key="backgroundColor" name="Green"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="idD-1g-cbQ" secondAttribute="height" multiplier="6:1" id="Ye7-Jt-pHG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="17"/>
+                                <state key="normal" title="See more details">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="moreDetailsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="psm-Gs-3EU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="x0i-hM-txX" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="1JE-ia-tXG"/>
+                            <constraint firstItem="x0i-hM-txX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AnR-vU-0Ql"/>
+                            <constraint firstItem="idD-1g-cbQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="B1R-5H-DDv"/>
+                            <constraint firstItem="MKy-bP-B96" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BGj-7k-Dvs"/>
+                            <constraint firstItem="x0i-hM-txX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LdX-15-22t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="idD-1g-cbQ" secondAttribute="trailing" constant="38" id="LlL-Qn-kZg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MKy-bP-B96" secondAttribute="trailing" constant="16" id="SOX-d9-0aG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="idD-1g-cbQ" secondAttribute="bottom" constant="30" id="apA-7e-lDo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x0i-hM-txX" secondAttribute="trailing" constant="16" id="qYn-fG-tL1"/>
+                            <constraint firstItem="MKy-bP-B96" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="w6Y-Hc-hHL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Kinedu NPS Score" id="TW5-px-cfP">
+                        <barButtonItem key="backBarButtonItem" title=" " id="lrQ-cM-8ou"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="alertBackground" destination="x0i-hM-txX" id="ri4-L7-tod"/>
+                        <outlet property="customSegmentedControl" destination="BIJ-Zx-o9h" id="bEC-7Q-oR5"/>
+                        <outlet property="headerTopConstraint" destination="w6Y-Hc-hHL" id="Zd6-pY-JE0"/>
+                        <outletCollection property="labels" destination="N3D-Pd-cKK" collectionClass="NSMutableArray" id="97e-Gm-3Zg"/>
+                        <outletCollection property="labels" destination="XkN-kw-xD9" collectionClass="NSMutableArray" id="Xj5-61-qrV"/>
+                        <outletCollection property="labels" destination="qRc-kM-VF1" collectionClass="NSMutableArray" id="z8V-6S-5NB"/>
+                        <outletCollection property="labels" destination="Hhm-yI-OOG" collectionClass="NSMutableArray" id="cf0-iv-k9R"/>
+                        <outletCollection property="labels" destination="oba-Rc-Mli" collectionClass="NSMutableArray" id="UrG-io-Qy5"/>
+                        <outletCollection property="labels" destination="dRw-Ce-t8a" collectionClass="NSMutableArray" id="8MT-ra-EuF"/>
+                        <outletCollection property="labels" destination="WxR-gn-Hvt" collectionClass="NSMutableArray" id="SDA-tS-vmZ"/>
+                        <outletCollection property="labels" destination="dG0-S9-zag" collectionClass="NSMutableArray" id="BzI-Be-6Sf"/>
+                        <segue destination="0MH-o3-DPc" kind="show" identifier="detailSegue" id="UIK-cf-kqZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="119"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="1d4-3t-zDp">
+            <objects>
+                <viewController title="Detail" id="0MH-o3-DPc" customClass="DetailViewController" customModule="KineduTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jgf-MI-DLW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xv-hv-5Uz" userLabel="First View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="227.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="a13-wD-T8k">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="201.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPQ-Gy-hTp">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="15"/>
+                                                <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nww-O0-ZAt">
+                                                <rect key="frame" x="0.0" y="31" width="375" height="170.5"/>
+                                                <color key="backgroundColor" name="Blue"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Nww-O0-ZAt" secondAttribute="height" multiplier="2.2:1" id="wPQ-JQ-tvE"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="15" minimumInteritemSpacing="15" id="cVK-qp-Yb8">
+                                                    <size key="itemSize" width="50" height="50"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="babyCell" id="Ugl-hc-0lF" customClass="BabyCollectionViewCell" customModule="KineduTest" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="10.5" width="110" height="150"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="110" height="150"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baby_0" translatesAutoresizingMaskIntoConstraints="NO" id="1Kj-fa-KLz">
+                                                                    <rect key="frame" x="6" y="10" width="98" height="98"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="1Kj-fa-KLz" secondAttribute="height" multiplier="1:1" id="TOq-pP-lfT"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPT-Bi-SuK">
+                                                                    <rect key="frame" x="6" y="120" width="98" height="18"/>
+                                                                    <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </view>
+                                                        <constraints>
+                                                            <constraint firstItem="1Kj-fa-KLz" firstAttribute="top" secondItem="Ugl-hc-0lF" secondAttribute="top" constant="10" id="5Ne-yv-c9r"/>
+                                                            <constraint firstItem="1Kj-fa-KLz" firstAttribute="leading" secondItem="Ugl-hc-0lF" secondAttribute="leading" constant="6" id="IGa-OO-Qz3"/>
+                                                            <constraint firstItem="1Kj-fa-KLz" firstAttribute="centerX" secondItem="Ugl-hc-0lF" secondAttribute="centerX" id="IeA-gS-PMD"/>
+                                                            <constraint firstItem="QPT-Bi-SuK" firstAttribute="leading" secondItem="Ugl-hc-0lF" secondAttribute="leading" constant="6" id="TSv-Wq-biO"/>
+                                                            <constraint firstItem="QPT-Bi-SuK" firstAttribute="top" secondItem="1Kj-fa-KLz" secondAttribute="bottom" constant="12" id="XpC-O0-WtQ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="QPT-Bi-SuK" secondAttribute="trailing" constant="6" id="fhf-1e-nuD"/>
+                                                            <constraint firstAttribute="trailing" secondItem="1Kj-fa-KLz" secondAttribute="trailing" constant="6" id="vzt-WA-RWA"/>
+                                                        </constraints>
+                                                        <size key="customSize" width="110" height="150"/>
+                                                        <connections>
+                                                            <outlet property="babyImageView" destination="1Kj-fa-KLz" id="YQf-Ta-8rl"/>
+                                                            <outlet property="babyScoreLabel" destination="QPT-Bi-SuK" id="sEt-Lz-qYq"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="0MH-o3-DPc" id="abU-sy-lhg"/>
+                                                    <outlet property="delegate" destination="0MH-o3-DPc" id="Ekf-oq-y8x"/>
+                                                </connections>
+                                            </collectionView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Blue"/>
+                                <constraints>
+                                    <constraint firstItem="a13-wD-T8k" firstAttribute="leading" secondItem="6xv-hv-5Uz" secondAttribute="leading" id="Aot-UM-zFM"/>
+                                    <constraint firstAttribute="width" secondItem="6xv-hv-5Uz" secondAttribute="height" multiplier="1.65:1" id="ru4-0x-tpC"/>
+                                    <constraint firstItem="a13-wD-T8k" firstAttribute="top" secondItem="6xv-hv-5Uz" secondAttribute="top" constant="20" id="uIR-2W-ARN"/>
+                                    <constraint firstAttribute="trailing" secondItem="a13-wD-T8k" secondAttribute="trailing" id="wpZ-Yk-r4z"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U0d-vX-jqc" userLabel="Second View">
+                                <rect key="frame" x="16" y="257.5" width="343" height="298"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Emk-Ay-gVl">
+                                        <rect key="frame" x="0.0" y="175.5" width="343" height="122.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="EsM-dh-zpE">
+                                                <rect key="frame" x="29" y="35.5" width="283" height="48.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="firstBaseline" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PCU-w4-7OK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="283" height="17"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50 %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXH-QZ-ebj">
+                                                                <rect key="frame" x="0.0" y="0.0" width="43" height="17"/>
+                                                                <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="17"/>
+                                                                <color key="textColor" name="Green"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="of the users that answered 2 in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJX-BN-qCu">
+                                                                <rect key="frame" x="51" y="1.5" width="232" height="15"/>
+                                                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="15"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="firstBaseline" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AFR-aG-Lh1">
+                                                        <rect key="frame" x="0.0" y="33" width="283" height="15.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in their NPS scores saw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUo-dZ-Aa6">
+                                                                <rect key="frame" x="0.0" y="0.0" width="180.5" height="15"/>
+                                                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="15"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="8 activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AD6-qm-5nC">
+                                                                <rect key="frame" x="188.5" y="-1.5" width="94.5" height="17"/>
+                                                                <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="17"/>
+                                                                <color key="textColor" name="LightBlue"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Blue"/>
+                                        <constraints>
+                                            <constraint firstItem="EsM-dh-zpE" firstAttribute="centerX" secondItem="Emk-Ay-gVl" secondAttribute="centerX" constant="-1" id="3QI-cu-c7N"/>
+                                            <constraint firstItem="EsM-dh-zpE" firstAttribute="centerY" secondItem="Emk-Ay-gVl" secondAttribute="centerY" constant="-1.75" id="9WA-FY-QCc"/>
+                                            <constraint firstAttribute="width" secondItem="Emk-Ay-gVl" secondAttribute="height" multiplier="2.8:1" id="A10-DH-DmT"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="M9m-55-qZT">
+                                        <rect key="frame" x="63.5" y="29.5" width="216.5" height="129"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N P S   D E T A I L S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggA-2f-Aat">
+                                                <rect key="frame" x="0.0" y="0.0" width="216.5" height="22"/>
+                                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="22"/>
+                                                <color key="textColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UIH-EH-Ood">
+                                                <rect key="frame" x="4" y="46" width="208" height="83"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="wl1-mF-rVF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="83"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMK-DC-uc6">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                                <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="30"/>
+                                                                <color key="textColor" name="LightBlue"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fremium users" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6PQ-tQ-LOr">
+                                                                <rect key="frame" x="0.0" y="47" width="100" height="36"/>
+                                                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="18"/>
+                                                                <color key="textColor" name="Blue"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="fBA-7J-5Rl"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="7rh-J8-uHA">
+                                                        <rect key="frame" x="108" y="0.0" width="100" height="83"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKY-7I-WQn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                                                <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="30"/>
+                                                                <color key="textColor" name="LightBlue"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Premium users" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXv-bq-B6Z">
+                                                                <rect key="frame" x="0.0" y="47" width="100" height="36"/>
+                                                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="18"/>
+                                                                <color key="textColor" name="Blue"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="jSX-Wt-EEx"/>
+                                                        </constraints>
+                                                        <viewLayoutGuide key="safeArea" id="2ob-b8-N6V"/>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Emk-Ay-gVl" firstAttribute="leading" secondItem="U0d-vX-jqc" secondAttribute="leading" id="1p1-UK-2Cd"/>
+                                    <constraint firstAttribute="centerY" secondItem="M9m-55-qZT" secondAttribute="centerY" constant="55" id="CEM-JY-lAo"/>
+                                    <constraint firstItem="M9m-55-qZT" firstAttribute="centerX" secondItem="U0d-vX-jqc" secondAttribute="centerX" id="QAx-yh-9N0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Emk-Ay-gVl" secondAttribute="trailing" id="SyN-v9-f8E"/>
+                                    <constraint firstAttribute="width" secondItem="U0d-vX-jqc" secondAttribute="height" multiplier="1.15:1" id="VN3-01-6KX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Emk-Ay-gVl" secondAttribute="bottom" id="ra1-6f-2rE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6xv-hv-5Uz" firstAttribute="leading" secondItem="Ksp-TR-Gbh" secondAttribute="leading" id="8Fm-Vp-W2l"/>
+                            <constraint firstItem="U0d-vX-jqc" firstAttribute="top" secondItem="6xv-hv-5Uz" secondAttribute="bottom" constant="30" id="cKo-KE-XPW"/>
+                            <constraint firstItem="Ksp-TR-Gbh" firstAttribute="trailing" secondItem="U0d-vX-jqc" secondAttribute="trailing" constant="16" id="dmO-29-aRa"/>
+                            <constraint firstItem="6xv-hv-5Uz" firstAttribute="top" secondItem="Ksp-TR-Gbh" secondAttribute="top" id="ekc-tx-Jk1"/>
+                            <constraint firstItem="U0d-vX-jqc" firstAttribute="leading" secondItem="Ksp-TR-Gbh" secondAttribute="leading" constant="16" id="hjS-ge-hrB"/>
+                            <constraint firstItem="6xv-hv-5Uz" firstAttribute="trailing" secondItem="Ksp-TR-Gbh" secondAttribute="trailing" id="pNq-xu-DR8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ksp-TR-Gbh"/>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="collectionView" destination="Nww-O0-ZAt" id="wFq-Zb-Vh2"/>
+                        <outlet property="detailSubView" destination="Emk-Ay-gVl" id="R5g-zW-nCO"/>
+                        <outlet property="detailView" destination="U0d-vX-jqc" id="ui0-56-hJP"/>
+                        <outletCollection property="labels" destination="pPQ-Gy-hTp" collectionClass="NSMutableArray" id="S5j-jx-PuJ"/>
+                        <outletCollection property="labels" destination="ggA-2f-Aat" collectionClass="NSMutableArray" id="sEk-9u-PvK"/>
+                        <outletCollection property="labels" destination="EMK-DC-uc6" collectionClass="NSMutableArray" id="Xqs-XU-N81"/>
+                        <outletCollection property="labels" destination="kKY-7I-WQn" collectionClass="NSMutableArray" id="6I9-36-RBo"/>
+                        <outletCollection property="labels" destination="6PQ-tQ-LOr" collectionClass="NSMutableArray" id="rVf-rc-vnh"/>
+                        <outletCollection property="labels" destination="XXv-bq-B6Z" collectionClass="NSMutableArray" id="ork-vz-Cpu"/>
+                        <outletCollection property="labels" destination="eXH-QZ-ebj" collectionClass="NSMutableArray" id="nPm-iQ-UUV"/>
+                        <outletCollection property="labels" destination="VJX-BN-qCu" collectionClass="NSMutableArray" id="C4f-3w-4jz"/>
+                        <outletCollection property="labels" destination="AUo-dZ-Aa6" collectionClass="NSMutableArray" id="iQA-me-KOP"/>
+                        <outletCollection property="labels" destination="AD6-qm-5nC" collectionClass="NSMutableArray" id="Zad-uM-Zhk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AOJ-Q4-ghD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1968.8" y="118.29085457271366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PBV-Mr-BRU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="87d-GG-0Uy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="i0Y-SI-6Yl">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="NavigationBar"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="a9B-nW-wg9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRK-EW-eSj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="119.1904047976012"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baby_0" width="175" height="176"/>
+        <namedColor name="ActiveTab">
+            <color red="0.96862745098039216" green="0.55686274509803924" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Blue">
+            <color red="0.070588235294117646" green="0.39215686274509803" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Green">
+            <color red="0.45882352941176469" green="0.71764705882352942" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightBlue">
+            <color red="0.12156862745098039" green="0.67843137254901964" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NavigationBar">
+            <color red="0.10588235294117647" green="0.45882352941176469" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red">
+            <color red="0.89803921568627454" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
